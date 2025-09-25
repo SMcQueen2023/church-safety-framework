@@ -89,12 +89,7 @@ Covers all **exterior approaches, entrances, lots, drop-offs, crosswalks, and si
 
 ---
 
-## 9) Variables to Fill Before Publishing
-{{CHURCH_NAME}}, {{EFFECTIVE_DATE}}, {{PARKING_LEAD_NAME}}, {{REVIEW_CYCLE}}, {{SERVICE_TIMES}}, {{PREP_MIN}}, {{SERVICE_LENGTH}}, {{DISMISS_MIN}}, {{DEBRIEF_MIN}}, {{DRILL_FREQ}}, {{EMS_ROUTE}}, {{EMS_ENTRY_POINT}}, {{ACCESS_GATE_KEYS}}, {{PRIMARY_LOT_THRESHOLD}}, {{OVERFLOW_AREA}}, {{INCIDENT_NOTE_TIME}}, {{AAR_WINDOW}}
-
----
-
-## 10) References
+## 9) References
 - **FHWA — Traffic Incident Management (TIM) Program (overview).**  
   https://ops.fhwa.dot.gov/tim/  *(What TIM is; safety/secondary crash reduction)*
 - **FHWA — Quick Clearance (About) & Laws (National Review/PDF).**  

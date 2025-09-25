@@ -116,12 +116,7 @@ Covers all interiors/exteriors during:
 
 ---
 
-## 13) Variables to Fill Before Publishing
-{{CHURCH_NAME}}, {{EFFECTIVE_DATE}}, {{MEDICAL_LEAD_NAME}}, {{REVIEW_CYCLE}}, {{CAMPUS_NAME}}, {{SERVICE_TIMES}}, {{MIN_STAND_TIME}}, {{AED_LOCATIONS_MAP_URL}}, {{DRILL_FREQ}}, {{EMS_ENTRY_POINT}}, {{EMS_ROUTE}}, {{PREP_MIN}}, {{SERVICE_LENGTH}}, {{DISMISS_MIN}}, {{DEBRIEF_MIN}}, {{INCIDENT_NOTE_TIME}}, {{AAR_WINDOW}}, {{AED_CHECK_FREQ}}, {{STATE}}
-
----
-
-## 14) References
+## 13) References
 - **American Heart Association — 2020 CPR & ECC Guidelines (overview & algorithms).**  
   https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines  
   https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/highlights/hghlghts_2020_ecc_guidelines_english.pdf

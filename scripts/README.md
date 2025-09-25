@@ -1,35 +1,25 @@
-# scripts/
+# scripts/ — with global variables support
 
-Tiny, zero-dependency exporters for the plans. They copy a single Markdown plan from `/plans` to `/exports`, and (if **Pandoc** is installed) also generate a PDF.
+These exporters read **placeholders** like `{{CHURCH_NAME}}` in your plan files and replace them with values from a **global variables file** (`vars.env`) at export time. Your source files stay untouched.
 
-## Bash (macOS/Linux)
+You can keep any placeholders you don’t use; they’ll remain unchanged in the export.
 
+## Usage
+
+**Bash (macOS/Linux)**
 ```bash
-bash scripts/export.sh <plan> [-v <version>] [-o <outdir>]
-
-# Examples
-bash scripts/export.sh security-team
-bash scripts/export.sh medical-team -v 0.2.0
-bash scripts/export.sh parking-team -o exports
+bash scripts/export.sh security-team -f vars.env -v 0.2.0
 ```
 
-## PowerShell (Windows/macOS/Linux)
-
+**PowerShell (Windows/macOS/Linux)**
 ```powershell
-pwsh scripts/export.ps1 -Plan <plan> [-Version <version>] [-OutDir <outdir>]
-
-# Examples
-pwsh scripts/export.ps1 -Plan security-team
-pwsh scripts/export.ps1 -Plan medical-team -Version 0.2.0
-pwsh scripts/export.ps1 -Plan parking-team -OutDir exports
+pwsh scripts/export.ps1 -Plan security-team -VarsFile vars.env -Version 0.2.0
 ```
 
-### Notes
-- Reads from: `plans/<plan>.md`
-- Writes to:  `<outdir>/<plan>.md` (+ `<plan>.pdf` if Pandoc is installed)
-- If a version is supplied, also writes to `<outdir>/releases/v<version>/` and updates `<outdir>/latest/`
+- Outputs: `exports/<plan>.md` (+ `.pdf` if Pandoc is installed)
+- With a version: also copies to `exports/releases/v<version>/` and updates `exports/latest/`
 
-### Optional Pandoc install
-- macOS: `brew install pandoc`
-- Windows: https://github.com/jgm/pandoc/releases
-- Linux (Debian/Ubuntu): `sudo apt-get install pandoc` (or download latest release)
+## Notes
+- Lines starting with `#` or blank lines in `vars.env` are ignored.
+- Values are treated literally (no special regex needed). In Bash we build a small `sed` script; in PowerShell we use string `.Replace()`.
+- If the variables file isn’t found, export proceeds without substitutions.
