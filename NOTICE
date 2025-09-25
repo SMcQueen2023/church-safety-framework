@@ -1,0 +1,12 @@
+NOTICE
+======
+
+Project: church-safety-framework
+Copyright (c) {{YEAR}} {{AUTHOR_OR_ORG}}
+
+Unless otherwise noted:
+- Code and scripts (tooling, schemas, build scripts) are licensed under the MIT License (see LICENSE).
+- Documentation and templates in /plans and /artifacts are licensed under the Creative Commons Attribution 4.0 International License (see LICENSE-CC-BY-4.0).
+
+Attribution requirement for CC BY 4.0 content:
+"Based on 'church-safety-framework' by {{AUTHOR_OR_ORG}} (CC BY 4.0). Changes were made."
