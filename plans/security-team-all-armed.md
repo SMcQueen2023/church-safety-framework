@@ -130,7 +130,7 @@ Provide a safe, lawful, and disciplined armed volunteer program suitable for a c
 
 ---
 
-## 10) References (high-quality sources)
+## 10) References
 - **FEMA/DHS — Guide for Developing High-Quality Emergency Operations Plans for Houses of Worship.**  
   https://www.dhs.gov/sites/default/files/publications/Developing_EOPs_for_Houses_of_Worship_FINAL.PDF
 - **CISA — Protecting Houses of Worship (resources hub).**  
